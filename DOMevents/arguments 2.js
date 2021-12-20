@@ -1,0 +1,12 @@
+function getfullNmae(firstName, lastName) {
+    console.log(arguments);
+    let fullName = ' ';
+    for (let i = 0; i < arguments.length; i++) {
+        const namePart = arguments[i];
+        fullName = fullName + ' ' + namePart;
+
+    }
+    return fullName;
+}
+const name = getfullNmae('omak', 'songket', 'Hanif', 'songket');
+console.log(name);
